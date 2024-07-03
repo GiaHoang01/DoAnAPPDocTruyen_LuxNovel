@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lDrawer_aWrite_Drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="Activity.ActivityAccount"
+    tools:openDrawer="start">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+    >
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/uToolbar_aAccount_Toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:navigationIcon="@drawable/menu"
+                app:title="@string/account"
+            />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+        >
+
+            <EditText
+                android:id="@+id/uText_aAccount_Username"
+                android:enabled="false"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/gray"
+                android:drawableStart="@drawable/username"
+
+                android:textSize="20sp"
+                android:background="@drawable/border"
+
+                android:autofillHints=""
+                android:hint="@string/username"
+                android:ems="10"
+                android:inputType="text"
+
+                tools:ignore="LabelFor,VisualLintTextFieldSize,TextContrastCheck,TouchTargetSizeCheck"
+            />
+
+            <TextView
+                android:id="@+id/vText_aAccount_UsernameAnnotation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="end"
+                android:textSize="12sp"
+                android:textColor="@color/error_red"
+                android:text="@string/username_annotation"
+                tools:ignore="TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/uText_aAccount_Password"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/gray"
+                android:drawableStart="@drawable/password"
+                android:drawableEnd="@drawable/visibility"
+
+                android:textSize="20sp"
+                android:background="@drawable/border"
+
+                android:autofillHints=""
+                android:hint="@string/password"
+                android:ems="10"
+                android:inputType="textPassword"
+
+                tools:ignore="LabelFor,VisualLintTextFieldSize,TextContrastCheck,TouchTargetSizeCheck"
+            />
+            <TextView
+                android:id="@+id/vText_aAccount_PasswordAnnotation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="end"
+                android:textSize="12sp"
+                android:textColor="@color/error_red"
+                android:text="@string/password_annotation"
+                tools:ignore="TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/uText_aAccount_Email"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/gray"
+                android:drawableStart="@drawable/email"
+
+                android:textSize="20sp"
+                android:background="@drawable/border"
+
+                android:autofillHints=""
+                android:hint="@string/email"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+
+                tools:ignore="LabelFor,VisualLintTextFieldSize,TextContrastCheck,TouchTargetSizeCheck"
+            />
+            <TextView
+                android:id="@+id/vText_aAccount_EmailAnnotation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="end"
+                android:textSize="12sp"
+                android:textColor="@color/error_red"
+                android:text="@string/email_annotation"
+                tools:ignore="TextContrastCheck" />
+            <EditText
+                android:id="@+id/uText_aAccount_Name"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/gray"
+                android:drawableStart="@drawable/name"
+
+                android:textSize="20sp"
+                android:background="@drawable/border"
+
+                android:autofillHints=""
+                android:hint="@string/name"
+                android:ems="10"
+                android:inputType="text"
+
+                tools:ignore="LabelFor,VisualLintTextFieldSize,TextContrastCheck,TouchTargetSizeCheck"
+            />
+            <TextView
+                android:id="@+id/vText_aAccount_NameAnnotation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="end"
+                android:textSize="12sp"
+                android:textColor="@color/error_red"
+                android:text="Name Annotation"
+                tools:ignore="TextContrastCheck" />
+            <EditText
+                android:id="@+id/uText_aAccount_Dob"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/gray"
+                android:drawableStart="@drawable/dob"
+
+                android:textSize="20sp"
+                android:background="@drawable/border"
+
+                android:autofillHints=""
+                android:hint="@string/dob"
+                android:ems="10"
+                android:inputType="date"
+
+                tools:ignore="LabelFor,VisualLintTextFieldSize,TextContrastCheck,TouchTargetSizeCheck"
+            />
+            <TextView
+                android:id="@+id/vText_aAccount_DobAnnotation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="end"
+                android:textSize="12sp"
+                android:textColor="@color/error_red"
+                android:text="Dob annotation"
+                tools:ignore="TextContrastCheck" />
+            <EditText
+                android:id="@+id/uText_aAccount_Gender"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/gray"
+                android:drawableStart="@drawable/gender"
+
+                android:textSize="20sp"
+                android:background="@drawable/border"
+
+                android:autofillHints=""
+                android:hint="@string/gender"
+                android:ems="10"
+                android:inputType="text"
+
+                tools:ignore="LabelFor,VisualLintTextFieldSize,TextContrastCheck,TouchTargetSizeCheck"
+            />
+            <TextView
+                android:id="@+id/vText_aAccount_GenderAnnotation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="end"
+                android:textSize="12sp"
+                android:textColor="@color/error_red"
+                android:text="gender annotation"
+                tools:ignore="TextContrastCheck" />
+            <Button
+                android:id="@+id/uButton_aAccount_Update"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:text="@string/update_account"
+                android:background="@drawable/border"
+                tools:ignore="VisualLintButtonSize"
+            />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/vNavigation_aAccount_Navigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:scrollbars="vertical"
+        app:headerLayout="@layout/header_header"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:menu="@menu/menu_drawer" />
+
+</androidx.drawerlayout.widget.DrawerLayout>
